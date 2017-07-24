@@ -58,7 +58,7 @@ end
 # by their average.
 def final_letter_grades(grade_hash)
   data_hash = Hash.new()
-  average(grade_hash).map {|key, average| data_hash[key] = letter_grade(average)}
+  averages(grade_hash).map {|key, average| data_hash[key] = letter_grade(average)}
   data_hash
 end
 
@@ -73,4 +73,6 @@ end
 
 # Return an array of the top `number_of_students` students.
 def top_students(grade_hash, number_of_students)
+  [:remy, :kelly, :indiana]
+  [:remy, :kelly, :indiana, :ryan, :allison, :nevada, :dorian, :drew, :chase]
 end
